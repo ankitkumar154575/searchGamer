@@ -1,0 +1,199 @@
+/* Main Container */
+* {
+  font-family: sans-serif;
+}
+
+/* Single asterisk (*) */
+label.required::after {
+  content: " *";   /* Adds single asterisk */
+  color: red;      /* Makes it red */
+  font-weight: bold;
+}
+
+.small-input {
+  width: 22%; /* Adjust as needed */
+}
+
+.small-card {
+  width: 23.5%; /* Adjust as needed */
+}
+
+.small-value {
+  width: 46%; /* Adjust as needed */
+}
+
+/* Flex container for Transaction Date fields */
+.form-row {
+  display: flex;
+  gap: 15px; /* Adjust spacing between fields */
+}
+
+/* Ensure both date fields take equal width */
+.date-field {
+  width: 50%;
+}
+
+
+/* Double asterisk (**) */
+label.required-double::after {
+  content: " **";  /* Adds double asterisk */
+  color: red;      /* Makes it red */
+  font-weight: bold;
+}
+
+.container {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  background-color: #2a3f85;
+  color: white;
+  padding: 4px 15px;
+  text-align: left;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* Radio Button Group */
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 13px; /* Reduced text size */
+}
+
+/* Input and Select Fields */
+.form-group {
+  margin-bottom: 18px; /* Spacing between fields */
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 13px; /* Reduced text size */
+}
+
+.form-control {
+  width: 100%;
+  padding: 6px; /* Reduced padding */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 13px; /* Reduced text size */
+}
+
+/* Transaction Date Row */
+.form-row {
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  gap: 8px; /* Reduced spacing */
+}
+
+/* Adjust Transaction Start and End Date Fields */
+.form-row .form-group {
+  width: auto; /* Take required space */
+  margin-bottom: 16px; /* Maintain spacing below */
+}
+
+/* Date Input Fields */
+.form-row .form-group input[type="date"] {
+  width: 140px; /* Adjust width */
+  padding: 6px;
+  font-size: 13px;
+}
+
+/* Ensure Calendar Icon Stays Within Box */
+.form-row .form-group input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  padding-right: 5px;
+}
+
+/* Required Fields Text */
+.required-text {
+  font-size: 12px;
+  margin-top: 15px;
+  color: #555;
+}
+
+/* Magnify Glass Testing */
+/* Ensure input and search box are in the same row */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* Reduced space between input and search box */
+}
+
+/* Style the input field */
+.input-group input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 13px;
+  width: 200px; /* Adjust width as needed */
+}
+
+/* Even Smaller Magnifying Glass Box */
+.search-box {
+  background-color: white; /* White background */
+  border: 1px solid #ccc; /* Match input field border */
+  border-radius: 4px; /* Slightly rounded corners */
+  padding: 2px 6px; /* Further reduce padding */
+  font-size: 12px; /* Smaller icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px; /* Reduce width */
+  height: 24px; /* Reduce height */
+  cursor: pointer;
+}
+/*End of Magnify Glass Field */
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-submit, .btn-cancel {
+  padding: 8px 12px; /* Adjusted button size */
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: #2a3f85;
+  color: white;
+  border: none;
+}
+
+.btn-submit:hover {
+  background-color: #1d2c6a;
+}
+
+.btn-cancel {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.btn-cancel:hover {
+  background-color: darkred;
+}
+
+

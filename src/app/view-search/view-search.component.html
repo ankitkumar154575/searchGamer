@@ -1,0 +1,22 @@
+<div class="box-container">
+  <!-- Header -->
+  <div class="header">
+    <h3>Transaction Search Request</h3>
+  </div>
+
+  <!-- Radio Buttons (Single/Bulk Toggle) -->
+  <div class="radio-group">
+    <label>
+      <input type="radio" name="requestType" [(ngModel)]="isBulkRequest" [value]="false" (change)="toggleRequest(false)" />
+      Single Request
+    </label>
+    <label>
+      <input type="radio" name="requestType" [(ngModel)]="isBulkRequest" [value]="true" (change)="toggleRequest(true)" />
+      Bulk Request
+    </label>
+  </div>
+
+  <!-- Single or Bulk Request Form -->
+  <app-single-request *ngIf="!isBulkRequest"></app-single-request>
+  <app-bulk-request *ngIf="isBulkRequest"></app-bulk-request>
+</div>

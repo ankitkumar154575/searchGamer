@@ -1,0 +1,87 @@
+<div class="request-container">
+  <form>
+    <div class="form-group small-input">
+      <label class="required">Business Units </label>
+      <input type="text" class="form-control" name="businessUnit" [(ngModel)]="singleData.businessUnit" required />
+    </div>
+
+    <div class="form-group small-card">
+      <label class="required">Products </label>
+      <select class="form-control" name="products" [(ngModel)]="singleData.products" required>
+        <option value="Wire (EMEA GTW)">Wire (EMEA GTW)</option>
+        <option value="ACH">ACH</option>
+        <option value="SWIFT">SWIFT</option>
+      </select>
+    </div>
+
+    <!-- Flex Container for Transaction Dates -->
+<div class="form-row">
+  <div class="form-group date-field">
+    <label class="required">Transaction Start Date </label>
+    <input type="date" class="form-control" name="startDate" [(ngModel)]="singleData.startDate" required />
+  </div>
+
+  <div class="form-group date-field">
+    <label class="required">Transaction End Date </label>
+    <input type="date" class="form-control" name="endDate" [(ngModel)]="singleData.endDate" required />
+  </div>
+</div>
+
+
+    <div class="form-group">
+      <label class="required-double">Account Number </label>
+      <input type="text" class="form-control" name="accountNumber" [(ngModel)]="singleData.accountNumber" required />
+    </div>
+
+    <div class="form-group">
+      <label class="required-double">Client ID </label>
+      <input type="text" class="form-control" name="clientId" [(ngModel)]="singleData.clientId" required />
+    </div>
+
+    <div class="form-group">
+      <label class="required-double">Client Name </label>
+      <input type="text" class="form-control" name="clientName" [(ngModel)]="singleData.clientName" required />
+    </div>
+
+    <div class="form-group">
+      <label class="required-double">Keyword in Comment Text </label>
+      <input type="text" class="form-control" name="commentText" [(ngModel)]="singleData.commentText" required />
+    </div>
+
+    <div class="form-group">
+      <label class="required-double">Address </label>
+      <input type="text" class="form-control" name="address" [(ngModel)]="singleData.address" required />
+    </div>
+
+    <div class="form-group">
+      <label>Request Name</label>
+      <input type="text" class="form-control" name="requestName" [(ngModel)]="singleData.requestName" />
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Associated Case</label>
+        <div class="input-group">
+          <input type="text" class="form-control" name="associatedCase" [(ngModel)]="singleData.associatedCase" />
+          <div class="search-box">
+            🔍
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Required Fields Info -->
+    <div class="required-text">
+      All fields marked with * are required.  
+      <br />
+      One field marked with ** is required.
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-group">
+      <button type="submit" class="btn-submit">✔ Submit</button>
+      <button type="button" class="btn-cancel" (click)="clearForm()">❌ Cancel</button>
+    </div>
+  </form>
+</div>

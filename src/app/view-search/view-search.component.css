@@ -1,0 +1,46 @@
+
+
+/* Box Container */
+.box-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 30px auto; /* Centering the box */
+  padding: 20px;
+  background: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border: 1px solid #ddd; /* Light border */
+}
+
+/* Header Styling */
+.header {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px; /* Reduced from 15px to 5px */
+  background-color: #2a3f85;
+  color: white;
+  padding: 3px 15px; /* Further reduced padding */
+  text-align: left;
+  font-weight: bold;
+  border-radius: 20px; /* Increased border-radius for a more rounded look */
+  margin-bottom: 15px; /* Adjusted spacing below */
+  font-size: 16px;
+}
+
+/* Radio Button Group */
+.radio-group {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  margin: 5px 0; /* Reduced from 15px to 5px */
+  margin-bottom: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .box-container {
+    width: 95%;
+    padding: 15px;
+  }
+}
